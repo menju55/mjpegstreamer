@@ -1,0 +1,13 @@
+[Unit]
+Description=Camera streamer for OctoPrint
+After=network-online.target OctoPrint.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+ExecStart=/usr/bin/python3 /home/pi/mjpeg_streamer/mjpeg_server_octoprint.py
+
+[Install]
+WantedBy=multi-user.target
+
