@@ -13,7 +13,7 @@ To use:
 1. Install the raspberry pi camera2 python libraries: sudo apt install python3-picamera2
 2. Clone this repository.
 3. Run via: python3 mjpeg_server_octoprint.py
-4. Access the mjpg stream in your browser via: http://<YOURIPADDRESS>:8080/stream.mjpg or access a single snapshot via http://<YOURIPADDRESS>:8080/single
+4. Access the mjpg stream in your browser via: http://YOURIPADDRESS:8080/stream.mjpg or access a single snapshot via http://YOURIPADDRESS:8080/single
 
 To run at startup: 
 1. Edit the file webcamd.service and change the ExecStart=... line so that it points at the location you created the python file.
